@@ -1,0 +1,62 @@
+/* Custom компоненти */
+
+/* Карти */
+.custom-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Бейджове */
+.custom-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.badge-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Модални прозорци */
+.custom-modal {
+    background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Custom бутони */
+.btn-outline-custom {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Прогрес бар */
+.custom-progress {
+    height: 8px;
+    border-radius: 4px;
+    background: #e9ecef;
+    margin: 1rem 0;
+}
+
+.progress-bar {
+    background: var(--primary-color);
+    border-radius: 4px;
+} 

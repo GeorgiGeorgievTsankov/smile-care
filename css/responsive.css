@@ -1,0 +1,36 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ftco-section {
+    padding: 4em 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .slider-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ftco-section {
+    padding: 3em 0;
+  }
+  
+  .slider-text h1 {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+  }
+  
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+} 

@@ -1,0 +1,278 @@
+/* Основни стилове */
+:root {
+  --primary-color: #4dd0e1;
+  --secondary-color: #26c6da;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: var(--light-color);
+}
+
+/* Навигация */
+.ftco_navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    padding: 20px 0;
+    background: transparent;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: var(--primary-color);
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* CTA Button */
+.nav-item.cta .nav-link {
+    background: var(--primary-color);
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 25px;
+    color: #fff !important;
+}
+
+.nav-item.cta .nav-link:hover {
+    background: var(--secondary-color);
+}
+
+/* Scrolled State */
+.ftco_navbar.scrolled {
+    position: fixed;
+    background: #fff !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.ftco_navbar.scrolled .nav-link {
+    color: #000 !important;
+}
+
+.ftco_navbar.scrolled .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.ftco_navbar.scrolled .navbar-brand {
+    color: #000;
+}
+
+/* Mobile Menu */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #000 !important;
+    }
+
+    .nav-item.cta {
+        margin-top: 10px;
+    }
+
+    .nav-item.cta .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Бургер меню */
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 1;
+  position: relative;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon:before,
+.navbar-toggler-icon:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon:before {
+  top: -8px;
+}
+
+.navbar-toggler-icon:after {
+  bottom: -8px;
+}
+
+.scrolled .navbar-toggler-icon,
+.scrolled .navbar-toggler-icon:before,
+.scrolled .navbar-toggler-icon:after {
+  background-color: #000;
+}
+
+/* Бутони */
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Секции */
+.ftco-section {
+  padding: 7em 0;
+}
+
+/* Карти */
+.services {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.services:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+/* Форми */
+.form-control {
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+/* Галерия */
+.gallery {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.gallery img {
+  transition: all 0.3s ease;
+}
+
+.gallery:hover img {
+  transform: scale(1.1);
+}
+
+/* Header & Hero секция */
+.home-slider {
+  height: 100vh;
+  min-height: 600px;
+}
+
+.slider-item {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+}
+
+.slider-text {
+  color: #fff;
+  height: 100%;
+}
+
+.slider-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Appointment форма */
+.appointment-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Services секция */
+.services .icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Team секция */
+.staff {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.staff .img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+/* Testimonials */
+.testimony-wrap {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.user-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-size: cover;
+} 
