@@ -43,41 +43,4 @@
         }
     });
 
-    // Hero Slider
-    $('.home-slider').owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplayHoverPause: false,
-        nav: true,
-        dots: false,
-        navText: [
-            '<i class="fa fa-chevron-left"></i>',
-            '<i class="fa fa-chevron-right"></i>'
-        ]
-    });
-
-    // Testimonials Slider
-    $('.carousel-testimony').owlCarousel({
-        center: true,
-        loop: true,
-        items: 1,
-        margin: 30,
-        stagePadding: 0,
-        nav: false,
-        navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-
 })(jQuery); 
