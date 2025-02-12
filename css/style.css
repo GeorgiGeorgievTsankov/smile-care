@@ -12,7 +12,7 @@ body {
   background: var(--light-color);
 }
 
-/* Навигация */
+/* Navbar */
 .ftco_navbar {
   position: absolute;
   top: 0;
@@ -105,7 +105,7 @@ body {
   }
 }
 
-/* Бургер меню */
+/* Burger Menu */
 .navbar-toggler {
   border: none;
   padding: 0;
@@ -154,7 +154,7 @@ body {
   background-color: #000;
 }
 
-/* Бутони */
+/* Buttons */
 .btn-primary {
   background: var(--primary-color);
   border-color: var(--primary-color);
@@ -166,12 +166,12 @@ body {
   border-color: var(--secondary-color);
 }
 
-/* Секции */
+/* Sections */
 .ftco-section {
   padding: 7em 0;
 }
 
-/* Карти */
+/* Carts */
 .services {
   transition: all 0.3s ease;
   border-radius: 5px;
@@ -183,14 +183,14 @@ body {
   transform: translateY(-5px);
 }
 
-/* Форми */
+/* Form */
 .form-control {
   border-radius: 3px;
   border: 1px solid #ddd;
   padding: 10px 15px;
 }
 
-/* Галерия */
+/* Gallery */
 .gallery {
   position: relative;
   overflow: hidden;
@@ -203,47 +203,6 @@ body {
 
 .gallery:hover img {
   transform: scale(1.1);
-}
-
-/* Header & Hero секция */
-.home-slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.slider-item {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
-
-.slider-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.slider-text {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-}
-
-.slider-text h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.slider-text p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
 }
 
 /* Owl Nav */
@@ -292,7 +251,7 @@ body {
   }
 }
 
-/* Services секция */
+/* Services section */
 .services-section {
   padding: 100px 0;
   background-color: #f8f9fa;
@@ -981,7 +940,7 @@ body {
 }
 
 .hero-text h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -1007,6 +966,12 @@ body {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  }
 
 /* Achievements Section */
 .achievements-section {
