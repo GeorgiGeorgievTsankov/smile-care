@@ -12,35 +12,45 @@
     // Scrollax
     $.Scrollax();
 
-    // Навигация
+    // Навигация - добавяне/премахване на scrolled клас
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.ftco_navbar').addClass('scrolled');
+            $('.back-to-top').css({
+                'opacity': '1',
+                'visibility': 'visible'
+            });
         } else {
             $('.ftco_navbar').removeClass('scrolled');
+            $('.back-to-top').css({
+                'opacity': '0',
+                'visibility': 'hidden'
+            });
         }
     });
 
-    // Мобилно меню
+    // Мобилно меню - затваряне при клик върху линк
+    $('.navbar-nav .nav-link').on('click', function() {
+        $('#ftco-nav').collapse('hide');
+        $('.navbar-toggler').removeClass('active');
+    });
+
+    // Бургер бутон toggle
     $('.navbar-toggler').click(function() {
         $(this).toggleClass('active');
     });
 
-    // Затваряне на мобилното меню при клик
-    $('.nav-link').click(function() {
-        $('.navbar-collapse').collapse('hide');
-        $('.navbar-toggler').removeClass('active');
-    });
-
-    // Smooth scroll
-    $('.nav-link').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+    // Добавяне на back-to-top бутон в началото на документа
+    $(document).ready(function() {
+        $('body').append('<button class="back-to-top"><i class="fas fa-arrow-up"></i></button>');
+        
+        // Back-to-top функционалност
+        $('.back-to-top').click(function() {
             $('html, body').animate({
-                scrollTop: $(hash).offset().top
+                scrollTop: 0
             }, 800);
-        }
+            return false;
+        });
     });
 
 })(jQuery); 
